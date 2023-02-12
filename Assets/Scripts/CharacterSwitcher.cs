@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterSwitcher : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class CharacterSwitcher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     
     protected void disableAllCharacters() {

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class CharacterInputController : MonoBehaviour
 {
-    public float speed = 0;
+    public float speed = 10;
 
     private Rigidbody rb;
 
