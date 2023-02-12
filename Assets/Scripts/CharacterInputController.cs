@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class CharacterInputController : MonoBehaviour
 {
     private float movementX;
     private float movementY;
+    public bool enabled;
     
     void OnMove(InputValue movementValue)
     {
@@ -16,6 +17,11 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!enabled)
+        {
+            return;
+        }
+        
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
         transform.Translate(movement);

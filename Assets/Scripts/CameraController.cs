@@ -5,7 +5,7 @@ public class CameraController : MonoBehaviour
     public float smoothness;
     public Transform player;
     private Vector3 offset;
-    private Vector3 cameraPosition;
+    public Vector3 cameraPosition;
 
     void Start()
     {  
