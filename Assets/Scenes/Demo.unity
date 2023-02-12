@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb59be21b92c24fe9ba9d740d5573b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enabled: 1
+  speed: 10
 --- !u!54 &434676093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1404,9 +1404,9 @@ GameObject:
   - component: {fileID: 1264822836}
   - component: {fileID: 1264822835}
   - component: {fileID: 1264822834}
-  - component: {fileID: 1264822833}
   - component: {fileID: 1264822832}
   - component: {fileID: 1264822831}
+  - component: {fileID: 1264822833}
   m_Layer: 0
   m_Name: Blue Chicken
   m_TagString: Player
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb59be21b92c24fe9ba9d740d5573b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enabled: 0
+  speed: 10
 --- !u!114 &1264822833
 MonoBehaviour:
   m_ObjectHideFlags: 0
