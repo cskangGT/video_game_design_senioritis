@@ -12,21 +12,30 @@ public class Doors : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void OnTriggerEnter(Collider c) {
-        if (c.gameObject.tag == "Player") {
-            doorOpen = true;
-            DoorControl("Open");
-        }
+    public void OpenDoor()
+    {
+        DoorControl("Open");
     }
 
-    void OnTriggerExit(Collider c) {
-        if (doorOpen) {
-            doorOpen = false;
-            DoorControl("Close");
-        }
-    }
+    //void OnTriggerEnter(Collider c) {
+    //    if (c.gameObject.tag == "Chiecken") {
+    //        doorOpen = true;
+    //        DoorControl("Open");
+    //    }
+    //}
 
-    void DoorControl(string direction) {
+    //void OnTriggerExit(Collider c)
+    //{
+    //    if (doorOpen)
+    //    {
+    //        doorOpen = false;
+    //        DoorControl("Close");
+    //    }
+    //}
+
+    public void DoorControl(string direction)
+    {
         animator.SetTrigger(direction);
+        animator.SetTrigger("Close");
     }
 }
